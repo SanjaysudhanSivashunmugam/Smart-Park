@@ -1,14 +1,21 @@
-import Courses from "./Components/Courses";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
+
+
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const Homepage = React.lazy(() => import('./Pages/HomePage.jsx'));
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Courses />
-    </div>
-  )
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          
+        </Routes>
+      </Suspense>
+    </Router>
+  );
 }
+
 export default App;
