@@ -1,13 +1,10 @@
-import Courses from "./Components/Courses";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
+import Auth from "./Components/Auth";
+import Howitwork from "./Components/Howitwork";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Courses />
+      <Auth />
     </div>
   )
 }
