@@ -13,7 +13,7 @@ function Booking(props) {
         return seatsArray;
     };
 
-    const [seats, setSeats] = useState(generateSeats(10));
+    const [seats, setSeats] = useState(generateSeats(3));
 
 
     const toggleBooking = (id) => {
