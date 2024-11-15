@@ -37,7 +37,7 @@ function OurPresences(props) {
                         
                     </div>
                 ) : (
-                    <h1 className="text-center pb-96 pt-48 text-7xl text-white font-bold">We Are Implementing Soon :)</h1>
+                    <h1 className="text-center pb-96 pt-48 text-7xl text-white font-bold">We Are Coming Soon to your location :)</h1>
                 )}
             </div>
         </div>
