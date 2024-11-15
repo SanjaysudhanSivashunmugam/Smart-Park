@@ -28,7 +28,7 @@ function OurPresences(props) {
                     <div  >
                         {!isMallSelect ?(
                             <div>
-                            <div className="flex justify-center m-7 text-2xl"><h1>Our Presences in {cityname}</h1></div>
+                            <div className="flex justify-center m-7 text-3xl text-white font-bold"><h1>Our Presences in {cityname}</h1></div>
                             <div className="flex justify-around" ><CoimbatoreMallsList items={coimbatoreList} mallselect={MallSelect} /></div>
                         </div>
                         ):(
@@ -37,7 +37,7 @@ function OurPresences(props) {
                         
                     </div>
                 ) : (
-                    <h1 className="text-6xl pt-32">We Are Implementing Soon</h1>
+                    <h1 className="text-center pb-96 pt-48 text-7xl text-white font-bold">We Are Implementing Soon :)</h1>
                 )}
             </div>
         </div>

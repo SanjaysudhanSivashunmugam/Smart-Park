@@ -25,8 +25,10 @@ function Booking(props) {
     };
 
     return (
-        <div className="p-10">
+        <div className="flex justify-center items-center mt-8 ">
 
+        <div className="p-10 bg-white mb-28 w-[75%] rounded-2xl bg-opacity-80">
+ 
             <div className="flex justify-evenly">
                 <div>
                     <h2 className="text-3xl font-semibold  ">{mall.name}</h2>
@@ -37,11 +39,13 @@ function Booking(props) {
                     />
                     <p className="w-96 font-semibold">Welcome to {mall.name}! Here you can find the best shopping experience in Coimbatore.</p>
                 </div>
-                <div>
+                <div className="flex justify-center items-center">
                     <Seat seats={seats} bookseat={toggleBooking}/>
                 </div>
             </div>
         </div>
+        </div>
+
     );
 }
 

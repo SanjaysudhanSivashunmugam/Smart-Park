@@ -45,7 +45,7 @@ function Seat() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-3 gap-4 ">
       <div
         className={`w-24 h-24 rounded-lg flex justify-center  ${!sensorData.sensor1 ? 'bg-red-400' : 'bg-green-400'}`}
       >

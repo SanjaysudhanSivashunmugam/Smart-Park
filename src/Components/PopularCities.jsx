@@ -40,7 +40,7 @@ function PopularCities({ onCityClick }) {
                 </a>
             </div>
             <div className="flex justify-center p-5">
-                <h2>View All Cities</h2>
+                <a href="" className='hover:underline'><h2>View All Cities</h2></a>
             </div>
         </>
     );

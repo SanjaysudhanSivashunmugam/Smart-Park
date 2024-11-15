@@ -14,7 +14,7 @@ function CoimbatoreMallsList(props) {
 
     return (
         <div>
-            <ol className="p-10 bg-slate-400 rounded-2xl">
+            <ol className="p-10 bg-white opacity-85 rounded-2xl mb-48">
                 {listItems.length > 0 ? (
                     <ul className="flex justify-between">{listItems}</ul>
                 ) : (
