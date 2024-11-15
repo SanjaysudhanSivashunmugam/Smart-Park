@@ -4,7 +4,7 @@ function Seat() {
   const [sensorData, setSensorData] = useState({ sensor1: 0, sensor2: 0, sensor3: 0 });
   const fetchSensorData = async () => {
     try {
-      const response = await fetch('http://192.168.157.76:3000/update-parking'); 
+      const response = await fetch('https://smartparking-mini-project.netlify.app/.netlify/functions/updateparking');
       const data = await response.json();
       setSensorData(data);
     } catch (error) {
