@@ -8,7 +8,7 @@ function CoimbatoreMallsList(props) {
             onClick={() => mallselect(item)} // Pass the selected mall item here
         >
             <img src={item.image} alt={`${item.name} image`} className="w-60 h-60 rounded" />
-            <span>{item.name}</span>
+            <span className="font-semibold">{item.name}</span>
         </li>
     ));
 
