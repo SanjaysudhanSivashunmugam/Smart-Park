@@ -30,7 +30,7 @@ function Seat() {
   // Function to fetch sensor data from the Node.js server
   const fetchSensorData = async () => {
     try {
-      const response = await fetch('http://192.168.83.76:3000/update-parking'); // Replace with your server IP if needed
+      const response = await fetch('http://192.168.157.76:3000/update-parking'); // Replace with your server IP if needed
       const data = await response.json();
       setSensorData(data);
     } catch (error) {
